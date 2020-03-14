@@ -32,7 +32,11 @@ public class SpawnController : MonoBehaviour
         {
 
             yield return new WaitForSeconds(timeToNextSpawn);
-            var position = new Vector3(Random.Range(-8f, 9f), 5f);
+
+            var leftPos = Camera.main.ScreenToWorldPoint(new Vector3(0f, Screen.height, 0f));
+            var rightPos = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0f));
+
+            var position = new Vector3(Random.Range(leftPos.x, rightPos.x), leftPos.y + 1f);
             Instantiate(junkPrefab, position, Quaternion.identity);
         }
     }
