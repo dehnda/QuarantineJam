@@ -3,9 +3,11 @@ using UnityEngine;
 
 
 [RequireComponent(typeof(Rigidbody2D))]
-[RequireComponent(typeof(BoxCollider2D))]
+[RequireComponent(typeof(Animator))]
 public class Move : MonoBehaviour
 {
+    [SerializeField]
+    private bool jump = false;
     [SerializeField]
     private float jumpForce = 400f;
     [SerializeField]
@@ -13,17 +15,15 @@ public class Move : MonoBehaviour
     [SerializeField]
     private Vector2 velocity;
     private Rigidbody2D rb2D;
-    private BoxCollider2D boxCollider = null;
-    private float distToGround = 0f;
-    bool jump = false;
+
+    private bool LookRight = true;
+
+    private Animator animator = null;
 
     void Start()
     {
         rb2D = gameObject.GetComponent<Rigidbody2D>();
-        boxCollider = GetComponent<BoxCollider2D>();
-
-        // get the distance to ground
-        distToGround = boxCollider.bounds.extents.y;
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -39,6 +39,30 @@ public class Move : MonoBehaviour
             jump = true;
             Debug.Log("Jump");
         }
+
+        animator.SetFloat("speed", Mathf.Abs(h));
+
+        animator.SetBool("isJumping", !IsGrounded());
+
+        // just flip if not already and moving
+        if ((h > 0f) && !LookRight)
+        {
+            FlipPlayer();
+        }
+        else if ((h < 0f) && LookRight)
+        {
+            FlipPlayer();
+        }
+    }
+
+    void FlipPlayer()
+    {
+        LookRight = !LookRight;
+
+        // by multiply x * (-1) we just flip the char
+        var localScale = transform.localScale;
+        localScale.x *= -1;
+        transform.localScale = localScale;
     }
 
     bool IsGrounded()
