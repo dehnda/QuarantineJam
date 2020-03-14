@@ -438,7 +438,7 @@ MonoBehaviour:
     type: 3}
   junkPrefab: {fileID: 1954194420750100493, guid: 9ef41a3d5515664109875b85cf0d5c3e,
     type: 3}
-  timeToNextSpawn: 5
+  timeToNextSpawn: 2
   GameIsRunning: 0
 --- !u!1001 &6920571609077303691
 PrefabInstance:
