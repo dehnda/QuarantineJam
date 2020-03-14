@@ -261,7 +261,7 @@ GameObject:
   - component: {fileID: 1446192619}
   - component: {fileID: 1446192618}
   - component: {fileID: 1446192620}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tilemap_Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -910,7 +910,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f89c9d5aac519ea082e946e524f9920, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumpForce: 400
   speed: 8
+  velocity: {x: 0, y: 0}
 --- !u!212 &1577859665
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -969,7 +971,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1577859663}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1, y: 2, z: -0.86311185}
+  m_LocalPosition: {x: -1, y: -1.5, z: -0.86311185}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1016,11 +1018,11 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 15
+  m_GravityScale: 3
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!95 &1577859669
 Animator:
