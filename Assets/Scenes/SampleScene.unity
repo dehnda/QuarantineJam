@@ -197,6 +197,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startPoints: 100
   curentPoints: 100
+  GameIsRunning: 0
+  decreaseAmount: 5
+  decreaseTime: 1
 --- !u!4 &244878026
 Transform:
   m_ObjectHideFlags: 0
