@@ -5,10 +5,10 @@ using UnityEngine;
 using Unity;
 using System.Collections;
 
+[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(BoxCollider2D))]
 public class Move : MonoBehaviour
 {
-    // public Texture2D tex;
-
     [SerializeField]
     private float speed = 5f;
     private Vector2 velocity;
