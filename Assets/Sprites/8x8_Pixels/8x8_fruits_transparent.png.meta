@@ -1,0 +1,457 @@
+fileFormatVersion: 2
+guid: 7d1f0353db10b543cbf27044a87c421b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6372443555061104408
+    second: 8x8_fruits_transparent_0
+  - first:
+      213: 8632520974908825412
+    second: 8x8_fruits_transparent_1
+  - first:
+      213: 5497662116376041678
+    second: 8x8_fruits_transparent_2
+  - first:
+      213: -6857824446669554604
+    second: 8x8_fruits_transparent_3
+  - first:
+      213: 7112860722731280819
+    second: 8x8_fruits_transparent_4
+  - first:
+      213: 6922642838854472160
+    second: 8x8_fruits_transparent_5
+  - first:
+      213: 1343955875755636702
+    second: 8x8_fruits_transparent_6
+  - first:
+      213: -5067568313883077671
+    second: 8x8_fruits_transparent_7
+  - first:
+      213: -6272169452926773224
+    second: 8x8_fruits_transparent_8
+  - first:
+      213: 6138605359653959215
+    second: 8x8_fruits_transparent_9
+  - first:
+      213: 379131225351124956
+    second: 8x8_fruits_transparent_10
+  - first:
+      213: -4708327564126645627
+    second: 8x8_fruits_transparent_11
+  - first:
+      213: -2937786503347978320
+    second: 8x8_fruits_transparent_12
+  - first:
+      213: -8794507314289752444
+    second: 8x8_fruits_transparent_13
+  - first:
+      213: 6119919746192027150
+    second: 8x8_fruits_transparent_14
+  - first:
+      213: 5729165622048540305
+    second: 8x8_fruits_transparent_15
+  - first:
+      213: -4736417361117549773
+    second: 8x8_fruits_transparent_16
+  - first:
+      213: 5576563775335035637
+    second: 8x8_fruits_transparent_17
+  - first:
+      213: 4521331428710108564
+    second: 8x8_fruits_transparent_18
+  - first:
+      213: 4369293253178912267
+    second: 8x8_fruits_transparent_19
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 8
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 8x8_fruits_transparent_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e00b5d69588097a0800000000000000
+      internalID: -6372443555061104408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 8x8_fruits_transparent_1
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44f9c81f610ecc770800000000000000
+      internalID: 8632520974908825412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 8x8_fruits_transparent_2
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec857b5219e9b4c40800000000000000
+      internalID: 5497662116376041678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 8x8_fruits_transparent_3
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45c7544000d14d0a0800000000000000
+      internalID: -6857824446669554604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 8x8_fruits_transparent_5
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 47
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e192d4fbfa221060800000000000000
+      internalID: 6922642838854472160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 8x8_fruits_transparent_6
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 47
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed7b6389fb0b6a210800000000000000
+      internalID: 1343955875755636702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 8x8_fruits_transparent_7
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 47
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d359f7b7716ca9b0800000000000000
+      internalID: -5067568313883077671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 8x8_fruits_transparent_8
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 47
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8185e3b2d17c4f8a0800000000000000
+      internalID: -6272169452926773224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 8x8_fruits_transparent_10
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 38
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd7ff4a37d1f24500800000000000000
+      internalID: 379131225351124956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 8x8_fruits_transparent_11
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 38
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5821d06b609a8aeb0800000000000000
+      internalID: -4708327564126645627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 8x8_fruits_transparent_12
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 38
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bfb1028db2ea37d0800000000000000
+      internalID: -2937786503347978320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 8x8_fruits_transparent_13
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 38
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4864f256132a3f580800000000000000
+      internalID: -8794507314289752444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 8x8_fruits_transparent_15
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 29
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 196459167c5128f40800000000000000
+      internalID: 5729165622048540305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 8x8_fruits_transparent_16
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 29
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33b6892318dd44eb0800000000000000
+      internalID: -4736417361117549773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
