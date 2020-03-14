@@ -1,4 +1,5 @@
-﻿using Unity;
+﻿using System;
+using Unity;
 using UnityEngine;
 
 
@@ -19,6 +20,13 @@ public class Move : MonoBehaviour
     private bool LookRight = true;
 
     private Animator animator = null;
+
+    [SerializeField]
+    private Vector2 rightBorder = Vector2.zero;
+    [SerializeField]
+    private Vector2 leftBorder = Vector2.zero;
+    [SerializeField]
+    private Vector2 PlayerWorldPos = Vector2.zero;
 
     void Start()
     {
@@ -51,6 +59,30 @@ public class Move : MonoBehaviour
         else if ((h < 0f) && LookRight)
         {
             FlipPlayer();
+        }
+
+        CheckBorders();
+    }
+
+    private void CheckBorders()
+    {
+
+        rightBorder = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, 0f, 0f));
+        leftBorder = Camera.main.ScreenToWorldPoint(new Vector3(0f, 0f, 0f));
+
+        PlayerWorldPos = transform.position;
+
+        if (PlayerWorldPos.x > rightBorder.x)
+        {
+            var newPos = PlayerWorldPos;
+            newPos.x = leftBorder.x;
+            transform.position = newPos;
+        }
+        else if (PlayerWorldPos.x < leftBorder.x)
+        {
+            var newPos = PlayerWorldPos;
+            newPos.x = rightBorder.x;
+            transform.position = newPos;
         }
     }
 
