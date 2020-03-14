@@ -6,12 +6,12 @@ using UnityEngine;
 public class JunkSelector : MonoBehaviour
 {
     [SerializeField]
-    private Sprite[] sprites = new Sprite[14];
+    private Sprite[] sprites = new Sprite[9];
     private SpriteRenderer spriteRenderer = null;
 
     void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        spriteRenderer.sprite = sprites[Random.Range(0, 13)];
+        spriteRenderer.sprite = sprites[Random.Range(0, 9)];
     }
 }

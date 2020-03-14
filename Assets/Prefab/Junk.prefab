@@ -12,10 +12,11 @@ GameObject:
   - component: {fileID: 1954194420750100480}
   - component: {fileID: 7418346519888482102}
   - component: {fileID: 4739405529915388984}
-  - component: {fileID: 7481557932317367913}
+  - component: {fileID: 497490555012478047}
+  - component: {fileID: 4914898251064033219}
   m_Layer: 0
   m_Name: Junk
-  m_TagString: Untagged
+  m_TagString: Junk
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -133,7 +134,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!50 &7481557932317367913
+--- !u!50 &497490555012478047
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -154,3 +155,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &4914898251064033219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954194420750100493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 525bf6091c64238ccbb0568e2a0402d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: 6038ac6955aa5c3ec9de8b08f66b2af5, type: 3}
+  floatSpeed: 2

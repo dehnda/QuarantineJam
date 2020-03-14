@@ -37,7 +37,6 @@ public class Move : MonoBehaviour
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
             jump = true;
-            Debug.Log("Jump");
         }
 
         animator.SetFloat("speed", Mathf.Abs(h));
