@@ -27,8 +27,9 @@ public class BubbleNator : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetButton("Fire1"))
+        if (Input.GetButtonDown("Fire1"))
         {
+            SoundManagerScript.PlaySound(Sounds.SHOOT);
             FireBubbleParticles();
             if (target != null)
             {

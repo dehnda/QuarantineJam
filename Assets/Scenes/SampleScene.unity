@@ -12514,6 +12514,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpawnController
       objectReference: {fileID: 0}
+    - target: {fileID: 5331654043610285784, guid: 623b29ac1c89de039a93e9e16056b15f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5331654043610285785, guid: 623b29ac1c89de039a93e9e16056b15f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12572,7 +12577,7 @@ PrefabInstance:
     - target: {fileID: 5331654043610285786, guid: 623b29ac1c89de039a93e9e16056b15f,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 623b29ac1c89de039a93e9e16056b15f, type: 3}

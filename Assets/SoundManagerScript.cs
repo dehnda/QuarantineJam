@@ -10,13 +10,13 @@ public enum Sounds
 }
 public class SoundManagerScript : MonoBehaviour
 {
-    public static AudioClip jumpSound;
+    public static AudioClip jumpSound, shootSound;
     static AudioSource audioSrc;
-    // Start is called before the first frame update
+
     void Start()
     {
         jumpSound = Resources.Load<AudioClip>("jump");
-        if (jumpSound == null) Debug.LogError("jump ogg not found");
+        shootSound = Resources.Load<AudioClip>("shoot");
         audioSrc = GetComponent<AudioSource> ();
     }
 
@@ -25,6 +25,9 @@ public class SoundManagerScript : MonoBehaviour
         switch (sound) {
             case Sounds.JUMP:
                 audioSrc.PlayOneShot(jumpSound);
+                break;
+            case Sounds.SHOOT:
+                audioSrc.PlayOneShot(shootSound);
                 break;
         }
     }
