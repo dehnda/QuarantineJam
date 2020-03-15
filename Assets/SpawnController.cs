@@ -7,11 +7,21 @@ public class SpawnController : MonoBehaviour
     [SerializeField]
     private GameObject fruitPrefab = null;
     [SerializeField]
+    private float time = 0f;
+    [SerializeField]
+    private float difference = 0f;
+    [SerializeField]
     private GameObject junkPrefab = null;
+    [SerializeField]
+    private float AccelerationRate = 0.1f;
+
     [SerializeField]
     private float timeToNextSpawn = 5f;
     [SerializeField]
     bool GameIsRunning = false;
+    bool UpdateTime = true;
+    private float IncreaseSpawnRate = 10f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,8 +33,20 @@ public class SpawnController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (UpdateTime)
+        {
+            time = Time.time;
+            UpdateTime = false;
+        }
 
+        difference = (Time.time - time);
+        if (difference > IncreaseSpawnRate)
+        {
+            timeToNextSpawn -= AccelerationRate;
+            UpdateTime = true;
+        }
     }
+
 
     IEnumerator InstantiateJunkRoutine()
     {
