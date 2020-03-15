@@ -167,6 +167,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 525bf6091c64238ccbb0568e2a0402d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bubblePrefab: {fileID: 7714016085352922898, guid: 53d77f2c8238ac0458202ce524b45e7b,
+    type: 3}
   points: 10
   sprite: {fileID: 21300000, guid: 6038ac6955aa5c3ec9de8b08f66b2af5, type: 3}
   floatSpeed: 2

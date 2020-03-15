@@ -11,6 +11,8 @@ public enum ItemType
 public class MovementItems : MonoBehaviour
 {
     [SerializeField]
+    private GameObject bubblePrefab = null;
+    [SerializeField]
     private float points = 10f;
     [SerializeField]
     private Sprite sprite = null;
@@ -74,8 +76,11 @@ public class MovementItems : MonoBehaviour
 
     void SetBubble()
     {
-        bubble = gameObject.GetComponent<SpriteRenderer>();
+        //bubble = gameObject.GetComponent<SpriteRenderer>();
         gameObject.GetComponent<BoxCollider2D>().enabled = false;
-        bubble.sprite = sprite;
+        //bubble.sprite = sprite;
+
+        var bubble = Instantiate(bubblePrefab, transform.position, Quaternion.identity);
+        bubble.transform.parent = transform;
     }
 }
