@@ -14,15 +14,13 @@ public class MovementItems : MonoBehaviour
     private GameObject bubblePrefab = null;
     [SerializeField]
     private float points = 10f;
-    [SerializeField]
-    private Sprite sprite = null;
+
     [SerializeField]
     private float floatSpeed = 2f;
     [SerializeField]
     private ItemType itemType = ItemType.Fruit;
     private bool Floating = false;
     private Rigidbody2D rb = null;
-    private SpriteRenderer bubble = null;
 
 
     // Start is called before the first frame update
@@ -53,8 +51,8 @@ public class MovementItems : MonoBehaviour
 
     public void SetFloatingTarget()
     {
-        SetBubble();
         rb.gravityScale = -floatSpeed;
+        SetBubble();
         Floating = true;
     }
 
@@ -76,10 +74,10 @@ public class MovementItems : MonoBehaviour
 
     void SetBubble()
     {
-        //bubble = gameObject.GetComponent<SpriteRenderer>();
+        // Disable collider when floating up
         gameObject.GetComponent<BoxCollider2D>().enabled = false;
-        //bubble.sprite = sprite;
 
+        // a bubble as child on food for visuals
         var bubble = Instantiate(bubblePrefab, transform.position, Quaternion.identity);
         bubble.transform.parent = transform;
     }
