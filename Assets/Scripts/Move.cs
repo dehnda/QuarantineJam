@@ -44,6 +44,7 @@ public class Move : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
+            SoundManagerScript.PlaySound(Sounds.JUMP);
             jump = true;
         }
 
