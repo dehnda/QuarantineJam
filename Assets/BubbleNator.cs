@@ -47,9 +47,7 @@ public class BubbleNator : MonoBehaviour
 
     private void FireBubbleParticles()
     {
-        //particle.Play();
-        particle.Emit(transform.position, )
-
+        particle.Play();
     }
 
     void OnTriggerEnter2D(Collider2D other)
