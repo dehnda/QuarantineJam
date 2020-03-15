@@ -32,17 +32,16 @@ public class MovementItems : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Floating && (transform.position.y > 5f))
+        var leftPos = Camera.main.ScreenToWorldPoint(new Vector3(0f, Screen.height, 0f));
+        if (Floating && (transform.position.y > leftPos.y))
         {
             if (itemType == ItemType.Fruit)
             {
                 FindObjectOfType<PointsController>().AddPoints(-points);
-                SoundManagerScript.PlaySound(Sounds.BADCATCH);
             }
             else if (itemType == ItemType.Junk)
             {
                 FindObjectOfType<PointsController>().AddPoints(points);
-                SoundManagerScript.PlaySound(Sounds.GOODCATCH);
             }
 
             Destroy(this.gameObject);
@@ -51,6 +50,15 @@ public class MovementItems : MonoBehaviour
 
     public void SetFloatingTarget()
     {
+        if (itemType == ItemType.Fruit)
+        {
+            SoundManagerScript.PlaySound(Sounds.BADCATCH);
+        }
+        else
+        {
+            SoundManagerScript.PlaySound(Sounds.GOODCATCH);
+        }
+
         rb.gravityScale = -floatSpeed;
         SetBubble();
         Floating = true;
