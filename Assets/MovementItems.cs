@@ -37,10 +37,12 @@ public class MovementItems : MonoBehaviour
             if (itemType == ItemType.Fruit)
             {
                 FindObjectOfType<PointsController>().AddPoints(-points);
+                SoundManagerScript.PlaySound(Sounds.BADCATCH);
             }
             else if (itemType == ItemType.Junk)
             {
                 FindObjectOfType<PointsController>().AddPoints(points);
+                SoundManagerScript.PlaySound(Sounds.GOODCATCH);
             }
 
             Destroy(this.gameObject);
@@ -59,10 +61,12 @@ public class MovementItems : MonoBehaviour
         if (itemType == ItemType.Fruit)
         {
             FindObjectOfType<PointsController>().AddPoints(points);
+            SoundManagerScript.PlaySound(Sounds.GOODCATCH);
         }
         else if (itemType == ItemType.Junk)
         {
             FindObjectOfType<PointsController>().AddPoints(-points);
+            SoundManagerScript.PlaySound(Sounds.BADCATCH);
         }
 
         Destroy(this.gameObject);

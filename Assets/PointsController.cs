@@ -28,6 +28,7 @@ public class PointsController : MonoBehaviour
         if (curentPoints < 0)
         {
             StopAllCoroutines();
+            SoundManagerScript.PlaySound(Sounds.DEATH);
             print("you Died");
         }
     }
