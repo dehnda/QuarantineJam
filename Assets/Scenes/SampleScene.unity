@@ -121,6 +121,146 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &354740309
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1386970807}
+    m_Modifications:
+    - target: {fileID: 1260326835424583842, guid: 795ccbd356474818585dccb8a2fc0012,
+        type: 3}
+      propertyPath: m_Name
+      value: bubbleParticles
+      objectReference: {fileID: 0}
+    - target: {fileID: 1260326835424583844, guid: 795ccbd356474818585dccb8a2fc0012,
+        type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1260326835424583844, guid: 795ccbd356474818585dccb8a2fc0012,
+        type: 3}
+      propertyPath: lengthInSec
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1260326835424583844, guid: 795ccbd356474818585dccb8a2fc0012,
+        type: 3}
+      propertyPath: ShapeModule.alignToDirection
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1260326835424583844, guid: 795ccbd356474818585dccb8a2fc0012,
+        type: 3}
+      propertyPath: ShapeModule.m_TextureColorAffectsParticles
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1260326835424583844, guid: 795ccbd356474818585dccb8a2fc0012,
+        type: 3}
+      propertyPath: ShapeModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1260326835424583844, guid: 795ccbd356474818585dccb8a2fc0012,
+        type: 3}
+      propertyPath: ShapeModule.m_Rotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1260326835424583844, guid: 795ccbd356474818585dccb8a2fc0012,
+        type: 3}
+      propertyPath: ShapeModule.randomDirectionAmount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1260326835424583844, guid: 795ccbd356474818585dccb8a2fc0012,
+        type: 3}
+      propertyPath: ShapeModule.sphericalDirectionAmount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1260326835424583844, guid: 795ccbd356474818585dccb8a2fc0012,
+        type: 3}
+      propertyPath: ShapeModule.randomPositionAmount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1260326835424583844, guid: 795ccbd356474818585dccb8a2fc0012,
+        type: 3}
+      propertyPath: ShapeModule.m_Position.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1260326835424583844, guid: 795ccbd356474818585dccb8a2fc0012,
+        type: 3}
+      propertyPath: EmissionModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1260326835424583844, guid: 795ccbd356474818585dccb8a2fc0012,
+        type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1260326835424583844, guid: 795ccbd356474818585dccb8a2fc0012,
+        type: 3}
+      propertyPath: ShapeModule.type
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1260326835424583845, guid: 795ccbd356474818585dccb8a2fc0012,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 1260326835424583845, guid: 795ccbd356474818585dccb8a2fc0012,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1260326835424583845, guid: 795ccbd356474818585dccb8a2fc0012,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1260326835424583845, guid: 795ccbd356474818585dccb8a2fc0012,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1260326835424583845, guid: 795ccbd356474818585dccb8a2fc0012,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1260326835424583845, guid: 795ccbd356474818585dccb8a2fc0012,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1260326835424583845, guid: 795ccbd356474818585dccb8a2fc0012,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1260326835424583845, guid: 795ccbd356474818585dccb8a2fc0012,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1260326835424583845, guid: 795ccbd356474818585dccb8a2fc0012,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1260326835424583845, guid: 795ccbd356474818585dccb8a2fc0012,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1260326835424583845, guid: 795ccbd356474818585dccb8a2fc0012,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 795ccbd356474818585dccb8a2fc0012, type: 3}
+--- !u!198 &354740310 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 1260326835424583844, guid: 795ccbd356474818585dccb8a2fc0012,
+    type: 3}
+  m_PrefabInstance: {fileID: 354740309}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -204,6 +344,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1386970807 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1862794050777100227, guid: 11d4d2fe99701ae3aa19235f364d2dca,
+    type: 3}
+  m_PrefabInstance: {fileID: 1862794049468732817}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1862794049468732817
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -266,6 +412,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1862794050777100231, guid: 11d4d2fe99701ae3aa19235f364d2dca,
+        type: 3}
+      propertyPath: particle
+      value: 
+      objectReference: {fileID: 354740310}
     - target: {fileID: 1862794050777100254, guid: 11d4d2fe99701ae3aa19235f364d2dca,
         type: 3}
       propertyPath: m_Name
