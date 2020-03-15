@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: 9742e1fc19496c7a6a0c55c646ed5751
+guid: 2a570fa9cec34a5d7a7d38b465dd6642
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6905922259874023411
-    second: Parchment_Dark
+      213: 855109145746902920
+    second: HealthBarBackgroundLight
   - first:
-      213: 1948117334319197221
-    second: Parchment_LightDark
+      213: 1671030921758915942
+    second: HealthbarLight
+  - first:
+      213: 8615672405087408359
+    second: HealthBar DARK_2
+  - first:
+      213: 6295436588568192482
+    second: HealthBar DARK_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -51,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 40
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -104,43 +110,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: uipack_rpg_sheet_0
+      name: HealthBar DARK_0
       rect:
         serializedVersion: 2
-        x: 191
-        y: 218
-        width: 92
-        height: 92
+        x: 17
+        y: 43
+        width: 61
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d08feb53b4c3920a0800000000000000
-      internalID: -6905922259874023411
+      spriteID: 88f8e6ccc35fddb00800000000000000
+      internalID: 855109145746902920
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Parchment_LightDark
+      name: HealthBar DARK_1
       rect:
         serializedVersion: 2
-        x: 201
-        y: 124
-        width: 92
-        height: 92
+        x: 18
+        y: 57
+        width: 59
+        height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52c60ecd46a190b10800000000000000
-      internalID: 1948117334319197221
+      spriteID: 66d322415c1b03710800000000000000
+      internalID: 1671030921758915942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar DARK_2
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 26
+        width: 59
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e0de569764019770800000000000000
+      internalID: 8615672405087408359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar DARK_3
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 12
+        width: 61
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e5aa9ff832ed5750800000000000000
+      internalID: 6295436588568192482
       vertices: []
       indices: 
       edges: []

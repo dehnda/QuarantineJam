@@ -1,0 +1,37 @@
+Thank you for downloading!
+I am so thrilled to have had the opportunity to work on this UI Freebie. However, it wouldn’t have been possible without the help of others. Below is a list of individuals that helped make this freebie possible!
+
+Character Sprites & Icons:
+The character sprites and icons in this UI freebie were created by Open Pixel Project, which is a collaborative effort to create freely available art assets for games. You can find more art assets like the ones included in this freebie at openpixelproject.com
+
+Fonts:
+The fonts used in this UI are SH Pinscher and Lady Radical. SH Pinscher was created by Design Sayshu and Lady Radical is by Chequered Ink. You can download the Lady Radical font at dafont.com/lady-radical.font and SH Pinscher from fontsquirrel.com/fonts/sh-pinscher.
+
+Background Art:
+Ansimuz is a pixel artist & game dev. He creates atmospheric and beautiful pixel game art. You can see more of his work and downloadable assets at https://ansimuz.itch.io/
+
+Ren'Py Engine
+Ren’Py is a visual novel engine used by thousands of creators around the world to craft interactive stories. It was created by Py’Tom and is free to use. You can download it at https://www.renpy.org/.
+
+Character Select Code
+Rinmaru created the character customization tutorial and code for this game. You can ??nd it at https://lemmasoft.renai.us/forums/viewtopic.php?f=51&t=30878.
+
+Coding Help
+Imperf3kt, Philat, and TellerFarsight gave me advice and help with code. Without them, this UI freebie would not be possible.
+
+Download Ren'Py:
+This UI Freebie comes pre-coded in Ren’Py, so you don’t have to code anything if programming is not your strong suit. All you need to do is download Ren’Py and you’ll be set! You can download Ren’Py for free at https://www.renpy.org/.
+
+How to set up:
+Once you have installed Ren’Py, you will need to include the Pixel Parchment UI in the Ren’Py projects folder in order to edit the code.Simply unzip Pixel Parchment UI.zip file included in this download, and drag that folder into your Ren’Py projects directory. Hitting ‘refresh’ next to where the projects are listed should show the Pixel Parchment UI freebie, and now you’ll be able to edit the code.
+
+Getting Started:
+If you are new to using Ren’Py, there are many resources and tutorials out there that will walk you through how to use Ren’Py.
+
+You can find an introduction to Ren’Py at https://www.renpy.org/doc/html/quickstart.html.
+
+A comprehensive guide on imagemaps can be found at http://fuckyeahrenpy.tumblr.com/post/91187662990/imagemap-tutorial-part-1-imagemap-basics 
+
+If you have specific questions pertaining to code or programming, you can ask the forum members at https://lemmasoft.renai.us/forums/viewforum.php?f=8
+
+The character select feature of this game also has a tutorial which can be found at https://lemmasoft.renai.us/forums/viewtopic.php?f=51&t=30878.
