@@ -75,7 +75,7 @@ public class PointsController : MonoBehaviour
             yield return new WaitForSeconds(decreaseTime);
             curentPoints -= currentDecreaseAmount;
 
-            currentDecreaseAmount += 0.1f;
+            currentDecreaseAmount *= 1.1f;
         }
 
     }

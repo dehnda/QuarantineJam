@@ -15405,6 +15405,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a055e86b09aa82609b15e7403fd4b2ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &579246266 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5331654043610285786, guid: 623b29ac1c89de039a93e9e16056b15f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5331654043849048524}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e57719523f8bca25b8161612c23560e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &737036134 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4806857598515313003, guid: 0956bca53bbd8703badc6ae854c58fe0,
@@ -15867,6 +15879,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Fade: {fileID: 1587085586}
   pointsController: {fileID: 126767175}
+  spawnController: {fileID: 579246266}
   timeUI: {fileID: 1634795942112489279}
   startOverlay: {fileID: 198416497}
   keysOverlay: {fileID: 1852796955325309964}
@@ -18020,7 +18033,7 @@ PrefabInstance:
     - target: {fileID: 7483140822038212420, guid: 8f79d78f164b4e1908b6c8dfd58296df,
         type: 3}
       propertyPath: decreaseTime
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7483140822038212420, guid: 8f79d78f164b4e1908b6c8dfd58296df,
         type: 3}
@@ -18030,7 +18043,7 @@ PrefabInstance:
     - target: {fileID: 7483140822038212420, guid: 8f79d78f164b4e1908b6c8dfd58296df,
         type: 3}
       propertyPath: startDecreaseAmount
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7483140822038212421, guid: 8f79d78f164b4e1908b6c8dfd58296df,
         type: 3}
@@ -18106,6 +18119,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: About
       objectReference: {fileID: 0}
+    - target: {fileID: 4806857598515313002, guid: 0956bca53bbd8703badc6ae854c58fe0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4806857598515313003, guid: 0956bca53bbd8703badc6ae854c58fe0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18164,12 +18182,12 @@ PrefabInstance:
     - target: {fileID: 4806857598515313003, guid: 0956bca53bbd8703badc6ae854c58fe0,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 4806857598515313003, guid: 0956bca53bbd8703badc6ae854c58fe0,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -65
       objectReference: {fileID: 0}
     - target: {fileID: 4806857598515313003, guid: 0956bca53bbd8703badc6ae854c58fe0,
         type: 3}
@@ -18189,7 +18207,7 @@ PrefabInstance:
     - target: {fileID: 4806857598515313003, guid: 0956bca53bbd8703badc6ae854c58fe0,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4806857598515313003, guid: 0956bca53bbd8703badc6ae854c58fe0,
         type: 3}
@@ -18199,7 +18217,7 @@ PrefabInstance:
     - target: {fileID: 4806857598515313003, guid: 0956bca53bbd8703badc6ae854c58fe0,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4806857598515313003, guid: 0956bca53bbd8703badc6ae854c58fe0,
         type: 3}

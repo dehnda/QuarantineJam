@@ -18,8 +18,9 @@ public class SpawnController : MonoBehaviour
     [SerializeField]
     private float timeToNextSpawn = 5f;
     [SerializeField]
-    bool GameIsRunning = false;
-    bool UpdateTime = true;
+    private bool GameIsRunning = false;
+    private List<GameObject> junkfruits = new List<GameObject>();
+    private bool UpdateTime = true;
     private float IncreaseSpawnRate = 10f;
 
     // Start is called before the first frame update
@@ -47,6 +48,15 @@ public class SpawnController : MonoBehaviour
         }
     }
 
+    public void Reset()
+    {
+        foreach (var item in junkfruits)
+        {
+            if (item != null)
+                Destroy(item.gameObject);
+        }
+    }
+
 
     IEnumerator InstantiateJunkRoutine()
     {
@@ -59,7 +69,7 @@ public class SpawnController : MonoBehaviour
             var rightPos = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0f));
 
             var position = new Vector3(Random.Range(leftPos.x, rightPos.x), leftPos.y + 1f);
-            Instantiate(junkPrefab, position, Quaternion.identity);
+            junkfruits.Add(Instantiate(junkPrefab, position, Quaternion.identity));
         }
     }
 
@@ -68,9 +78,9 @@ public class SpawnController : MonoBehaviour
         while (GameIsRunning)
         {
 
-            yield return new WaitForSeconds(timeToNextSpawn);
+            yield return new WaitForSeconds(timeToNextSpawn + 2f);
             var position = new Vector3(Random.Range(-8f, 9f), 5f);
-            Instantiate(fruitPrefab, position, Quaternion.identity);
+            junkfruits.Add(Instantiate(fruitPrefab, position, Quaternion.identity));
         }
     }
 }

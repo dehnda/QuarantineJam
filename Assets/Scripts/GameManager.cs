@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private PointsController pointsController = null;
     [SerializeField]
+    private SpawnController spawnController = null;
+    [SerializeField]
     private TimeUI timeUI = null;
     [SerializeField]
     private CanvasGroup startOverlay = null;
@@ -64,6 +66,7 @@ public class GameManager : MonoBehaviour
 
     private void ResetGameData()
     {
+        spawnController.Reset();
         pointsController.Reset();
         timeUI.Reset();
     }
