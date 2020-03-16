@@ -8,8 +8,6 @@ public class PointsController : MonoBehaviour
     [SerializeField]
     private PointsUI pointsUI = null;
     [SerializeField]
-    private TimeUI timeUI = null;
-    [SerializeField]
     private float startPoints = 100f;
     [SerializeField]
     private float curentPoints = 100f;
