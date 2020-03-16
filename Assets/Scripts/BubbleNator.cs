@@ -9,7 +9,7 @@ public class BubbleNator : MonoBehaviour
     private ParticleSystem particle = null;
     private CircleCollider2D circle = null;
     // Start is called before the first frame update
-    private MovementItems target = null;
+    private List<MovementItems> targets = new List<MovementItems>();
 
     void Awake()
     {
@@ -31,18 +31,18 @@ public class BubbleNator : MonoBehaviour
         {
             SoundManagerScript.PlaySound(Sounds.SHOOT);
             FireBubbleParticles();
-            if (target != null)
-            {
 
-                target.SetFloatingTarget();
-                target = null;
+            foreach (var t in targets.ToArray())
+            {
+                t.SetFloatingTarget();
             }
         }
-
-        if (Input.GetButton("Fire2") && (target != null))
+        else if (Input.GetButton("Fire2"))
         {
-            target.SetEatingTarget();
-            target = null;
+            foreach (var t in targets.ToArray())
+            {
+                t.SetEatingTarget();
+            }
         }
     }
 
@@ -55,7 +55,7 @@ public class BubbleNator : MonoBehaviour
     {
         if (other.CompareTag("Junk") || other.CompareTag("Fruit"))
         {
-            target = other.GetComponent<MovementItems>();
+            targets.Add(other.GetComponent<MovementItems>());
         }
     }
 
@@ -63,7 +63,7 @@ public class BubbleNator : MonoBehaviour
     {
         if (other.CompareTag("Junk") || other.CompareTag("Fruit"))
         {
-            target = null;
+            targets.Remove(other.GetComponent<MovementItems>());
         }
     }
 }
