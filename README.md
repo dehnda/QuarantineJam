@@ -9,6 +9,7 @@ Made with Unity 2019.3.3f1
 All licenses for assets are in the corresponding folder.
 
 - [UI, Sounds, Fonts, Icons](https://kenney.nl/)
+- [Background Music](https://www.playonloop.com/freebies-download/)
 - [Junk & Fruits](https://gwalker76.itch.io/8x8-pixel-assets)
 - [Bubbles](https://cassala.itch.io/bubble-sprites)
 - [Background](https://edermunizz.itch.io/)
