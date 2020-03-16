@@ -36,6 +36,9 @@ public class Move : MonoBehaviour
 
     void Update()
     {
+        if (!GameManager.GameIsRunning)
+            return;
+
         var h = Input.GetAxis("Horizontal");
 
         velocity = new Vector2(h, 0f);

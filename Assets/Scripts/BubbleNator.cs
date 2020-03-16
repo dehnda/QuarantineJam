@@ -10,6 +10,7 @@ public class BubbleNator : MonoBehaviour
     private CircleCollider2D circle = null;
     // Start is called before the first frame update
     private List<MovementItems> targets = new List<MovementItems>();
+    private bool isActive;
 
     void Awake()
     {
@@ -26,6 +27,8 @@ public class BubbleNator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!GameManager.GameIsRunning)
+            return;
 
         if (Input.GetButtonDown("Fire1"))
         {

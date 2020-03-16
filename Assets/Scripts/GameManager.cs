@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
 
     private float score = 0.0f;
 
-    private bool GameIsRunning = false;
+    public static bool GameIsRunning = false;
 
 
     void Start()
