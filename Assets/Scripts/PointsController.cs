@@ -41,8 +41,8 @@ public class PointsController : MonoBehaviour
 
     public void StartPointsController()
     {
-        StartCoroutine(DecreasePointsOverTimeRoutine());
         IsActive = true;
+        StartCoroutine(DecreasePointsOverTimeRoutine());
     }
 
     // Update is called once per frame
@@ -76,6 +76,8 @@ public class PointsController : MonoBehaviour
         {
             yield return new WaitForSeconds(decreaseTime);
             curentPoints -= currentDecreaseAmount;
+
+            currentDecreaseAmount += 0.1f;
         }
 
     }

@@ -13,7 +13,9 @@ public class GameManager : MonoBehaviour
     private CanvasGroup startOverlay = null;
 
     [SerializeField]
-    private CanvasGroup keys = null;
+    private CanvasGroup keysOverlay = null;
+    [SerializeField]
+    private CanvasGroup DeathOverlay = null;
 
     private float score = 0.0f;
 
@@ -29,14 +31,15 @@ public class GameManager : MonoBehaviour
     private void PlayerDied()
     {
         StopGame();
-        print("Game stopped Gamemanager");
     }
 
 
     public void StartGame()
     {
+        ResetGameData();
+
         ToggleCanvasGroup(startOverlay);
-        ToggleCanvasGroup(keys);
+        ToggleCanvasGroup(keysOverlay);
 
         Time.timeScale = 1f;
         GameIsRunning = true;
@@ -47,14 +50,13 @@ public class GameManager : MonoBehaviour
     public void StopGame()
     {
         ToggleCanvasGroup(startOverlay);
-        ToggleCanvasGroup(keys);
+        ToggleCanvasGroup(keysOverlay);
+        ToggleCanvasGroup(DeathOverlay);
 
         Time.timeScale = 0f;
         timeUI.ToggleTime();
         score = timeUI.Result;
         GameIsRunning = false;
-
-        ResetGameData();
     }
 
     private void ResetGameData()
