@@ -11,6 +11,7 @@ public class FadeIn : MonoBehaviour
 
     void Start()
     {
+        img.enabled = true;
         StartCoroutine(FadeImage());
     }
 
