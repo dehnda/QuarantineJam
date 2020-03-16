@@ -13,6 +13,7 @@ public class TimeUI : MonoBehaviour
     private float startTime = 0.0f;
     private float stopTime = 0.0f;
 
+    public float Result = 0.0f;
 
     void Update()
     {
@@ -33,8 +34,21 @@ public class TimeUI : MonoBehaviour
         IsStarted = !IsStarted;
 
         if (IsStarted)
+        {
             startTime = Time.time;
+        }
         else
+        {
             stopTime = Time.time;
+            Result = (stopTime - startTime);
+        }
+
+    }
+
+    public void Reset()
+    {
+        StopAllCoroutines();
+        startTime = 0.0f;
+        stopTime = 0.0f;
     }
 }

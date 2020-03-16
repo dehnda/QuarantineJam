@@ -9,7 +9,6 @@ public enum Sounds
     SHOOT,
     GOODCATCH,
     BADCATCH,
-    IMPACT,
     DEATH
 
 }
@@ -25,12 +24,14 @@ public class SoundManagerScript : MonoBehaviour
         goodSound = Resources.Load<AudioClip>("good");
         badSound = Resources.Load<AudioClip>("bad");
         deathSound = Resources.Load<AudioClip>("death");
-        audioSrc = GetComponent<AudioSource> ();
+        audioSrc = GetComponent<AudioSource>();
     }
 
-    public static void PlaySound(Sounds sound){
+    public static void PlaySound(Sounds sound)
+    {
 
-        switch (sound) {
+        switch (sound)
+        {
             case Sounds.JUMP:
                 audioSrc.PlayOneShot(jumpSound);
                 break;

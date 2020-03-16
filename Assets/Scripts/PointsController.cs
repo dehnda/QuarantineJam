@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PointsController : MonoBehaviour
 {
@@ -12,35 +13,50 @@ public class PointsController : MonoBehaviour
     private float startPoints = 100f;
     [SerializeField]
     private float curentPoints = 100f;
+
     [SerializeField]
-    private bool GameIsRunning = false;
-    [SerializeField]
-    private float decreaseAmount = 5f;
+    private float startDecreaseAmount = 5f;
+    private float currentDecreaseAmount = 5f;
     [SerializeField]
     private float decreaseTime = 1f;
 
-    // Start is called before the first frame update
-    void Start()
+
+    private bool IsActive = false;
+
+    UnityEvent playerDiedEvent = new UnityEvent();
+
+
+    public void SetCallback(UnityAction call)
     {
-        GameIsRunning = true;
-        timeUI.ToggleTime();
+        playerDiedEvent.AddListener(call);
+    }
 
-        StartCoroutine("DecreasePointsOverTimeRoutine");
+    public void Reset()
+    {
+        StopAllCoroutines();
+        curentPoints = startPoints;
+        currentDecreaseAmount = startDecreaseAmount;
+    }
 
 
+    public void StartPointsController()
+    {
+        StartCoroutine(DecreasePointsOverTimeRoutine());
+        IsActive = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (curentPoints < 0)
+        if (IsActive)
         {
-            StopAllCoroutines();
-            print("you Died");
-            timeUI.ToggleTime();
+            if (curentPoints < 0.0f)
+            {
+                IsActive = false;
+                playerDiedEvent.Invoke();
+            }
+            pointsUI.SetPoints(curentPoints);
         }
-
-        pointsUI.SetPoints(curentPoints);
     }
 
     public void AddPoints(float points)
@@ -56,10 +72,10 @@ public class PointsController : MonoBehaviour
 
     IEnumerator DecreasePointsOverTimeRoutine()
     {
-        while (GameIsRunning)
+        while (IsActive)
         {
             yield return new WaitForSeconds(decreaseTime);
-            curentPoints -= decreaseAmount;
+            curentPoints -= currentDecreaseAmount;
         }
 
     }
