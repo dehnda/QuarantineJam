@@ -13,7 +13,7 @@ public class SpawnController : MonoBehaviour
     [SerializeField]
     private GameObject junkPrefab = null;
     [SerializeField]
-    private float AccelerationRate = 0.1f;
+    private float AccelerationRate = 0.3f;
 
     [SerializeField]
     private float timeToNextSpawn = 5f;
@@ -22,6 +22,9 @@ public class SpawnController : MonoBehaviour
     private List<GameObject> junkfruits = new List<GameObject>();
     private bool UpdateTime = true;
     private float IncreaseSpawnRate = 10f;
+
+    private float startAccRate = 0.3f;
+    private float startTimeToNextSpawn = 5f;
 
     // Start is called before the first frame update
     void Start()
@@ -50,6 +53,16 @@ public class SpawnController : MonoBehaviour
 
     public void Reset()
     {
+        StopAllCoroutines();
+
+        AccelerationRate = startAccRate;
+        timeToNextSpawn = startTimeToNextSpawn;
+
+        StartCoroutine("InstantiateFruitRoutine");
+        StartCoroutine("InstantiateJunkRoutine");
+
+
+
         foreach (var item in junkfruits)
         {
             if (item != null)

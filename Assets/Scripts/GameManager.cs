@@ -33,6 +33,14 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0.0f;
     }
 
+    private void Update()
+    {
+        if (Input.GetButtonDown("Cancel") && GameIsRunning)
+        {
+            StopGame();
+        }
+    }
+
     private void PlayerDied()
     {
         StopGame();
