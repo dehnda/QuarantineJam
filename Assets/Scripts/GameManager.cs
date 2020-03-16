@@ -6,6 +6,8 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField]
+    private GameObject Fade = null;
+    [SerializeField]
     private PointsController pointsController = null;
     [SerializeField]
     private TimeUI timeUI = null;
@@ -22,8 +24,9 @@ public class GameManager : MonoBehaviour
     public static bool GameIsRunning = false;
 
 
-    void Start()
+    public void EnterGame()
     {
+        Fade.SetActive(false);
         pointsController.SetCallback(PlayerDied);
         Time.timeScale = 0.0f;
     }
