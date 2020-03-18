@@ -43,8 +43,6 @@ public class Move : MonoBehaviour
 
         velocity = new Vector2(h, 0f);
 
-        velocity *= speed;
-
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
             SoundManagerScript.PlaySound(Sounds.JUMP);
@@ -118,6 +116,18 @@ public class Move : MonoBehaviour
             jump = false;
         }
 
-        rb2D.velocity = new Vector2(velocity.x, rb2D.velocity.y);
+
+        var moveDirection = velocity;
+
+        if (velocity.x > 0.01f)
+        {
+            moveDirection = Vector2.right * speed;
+        }
+        else if (velocity.x < -0.01f)
+        {
+            moveDirection = Vector2.left * speed;
+        }
+
+        rb2D.velocity = (new Vector2(moveDirection.x, rb2D.velocity.y));
     }
 }
