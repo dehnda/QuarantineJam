@@ -189,7 +189,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Ctrl
+  m_Text: K
 --- !u!222 &125311954
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15704,7 +15704,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Ctrl
+  m_Text: K
 --- !u!222 &554998824
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17148,7 +17148,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Shift
+  m_Text: L
 --- !u!222 &1935684541
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17379,7 +17379,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Shift
+  m_Text: L
 --- !u!222 &2121348391
 CanvasRenderer:
   m_ObjectHideFlags: 0
