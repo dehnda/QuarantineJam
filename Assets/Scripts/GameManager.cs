@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     private CanvasGroup DeathOverlay = null;
 
     private float score = 0.0f;
+    private bool FirstTry = true;
 
     public static bool GameIsRunning = false;
 
@@ -53,6 +54,10 @@ public class GameManager : MonoBehaviour
 
         ToggleCanvasGroup(startOverlay);
         ToggleCanvasGroup(keysOverlay);
+        if (!FirstTry)
+            ToggleCanvasGroup(DeathOverlay);
+        else
+            FirstTry = false;
 
         Time.timeScale = 1f;
         GameIsRunning = true;
