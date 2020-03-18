@@ -6,6 +6,8 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField]
+    private Move playerMove = null;
+    [SerializeField]
     private GameObject Fade = null;
     [SerializeField]
     private PointsController pointsController = null;
@@ -82,6 +84,7 @@ public class GameManager : MonoBehaviour
         spawnController.Reset();
         pointsController.Reset();
         timeUI.Reset();
+        playerMove.Reset();
     }
 
     private void ToggleCanvasGroup(CanvasGroup canvasGroup)

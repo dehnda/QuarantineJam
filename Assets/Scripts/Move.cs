@@ -27,6 +27,7 @@ public class Move : MonoBehaviour
     private Vector2 leftBorder = Vector2.zero;
     [SerializeField]
     private Vector2 PlayerWorldPos = Vector2.zero;
+    private Vector3 startPosition = new Vector3(1f, -1.5f, 0f);
 
     void Start()
     {
@@ -64,6 +65,11 @@ public class Move : MonoBehaviour
         }
 
         CheckBorders();
+    }
+
+    public void Reset()
+    {
+        transform.position = startPosition;
     }
 
     private void CheckBorders()
